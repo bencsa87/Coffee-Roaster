@@ -1,5 +1,5 @@
 import { NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -11,4 +11,17 @@ import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'coffee-roaster';
+  menu_open = false;
+
+  constructor(private renderer: Renderer2){}
+
+  toggleMenu(){
+    if(this.menu_open){
+      this.renderer.removeClass(document.body, 'menu-open');
+      this.menu_open = false;
+    } else{
+      this.renderer.addClass(document.body, 'menu-open');
+      this.menu_open = true;
+    }
+  }
 }

@@ -1,10 +1,10 @@
-<header>
+<header class="main-header">
   <div class="container">
     <a routerLink="/" class="main-logo-link">
       <img class="main-logo" src="/assets/shared/desktop/logo.svg" alt="logo"/>
     </a>
 
-    <nav id="main-navigation">
+    <nav id="main-navigation" [class.show]="menu_open">
       <ul role="list">
         <li><a routerLink="/" >Home</a></li>
         <li><a routerLink="/about" >About us</a></li>
@@ -12,8 +12,8 @@
       </ul>
     </nav>
 
-    <div id="menu-opener" aria-expanded="false" aria-controls="main-navigation">
-      <span class="icon"></span>
+    <div id="menu-opener" [attr.aria-expanded]="menu_open" aria-controls="main-navigation" (click)="toggleMenu()">
+      <span class="icon" tabindex="0"></span>
     </div>
   </div>
 </header>
