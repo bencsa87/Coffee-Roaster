@@ -5,6 +5,8 @@
   --clr-light-cream: #FEFCF7;
   --clr-grey: #83888F;
 
+  --clr-footer-bg: #2C343E;
+
   --ff-main: 'Barlow', sans-serif;
   --ff-title: 'Fraunces', serif;
 
@@ -28,7 +30,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 html:focus-within {
