@@ -1,0 +1,33 @@
+.section-hero .container{
+  padding: 5.75rem 2rem;
+  margin-bottom: 9.25rem;
+  color: var(--clr-light-cream);
+  background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+@media(min-width: 48em){
+  .section-hero .container{
+    padding: 6rem 3.5rem;
+    background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+    background-position: top right;
+    text-align: left;
+  }
+
+  .section-hero h1{
+    max-width: 12ch;
+  }
+
+  .section-hero p{
+    max-width: 45ch;
+  }
+}
+
+@media(min-width: 84em){
+  .section-hero .container{
+    padding: 7rem 5rem;
+    background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
+  }
+}

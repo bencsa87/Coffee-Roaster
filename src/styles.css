@@ -1,5 +1,6 @@
 :root{
   --clr-dark-cyan: #0E8784;
+  --clr-light-cyan: #66D2CF;
   --clr-dark-grey-blue: #333D4B;
   --clr-pale-orange: #FDD6BA;
   --clr-light-cream: #FEFCF7;
@@ -92,14 +93,20 @@ body.menu-open{
   position: relative;
   cursor: pointer;
   text-decoration: none;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
   font-family: var(--ff-title);
   font-weight: var(--fw-black);
   font-size: 1.125rem;
   line-height: 1.3888;
+  color: var(--clr-light-cream);
   background-color: var(--clr-dark-cyan);
+  border: none;
   transition: background-color 0.5s ease-in-out;
   outline: none;
+}
+
+.button:hover, .button:focus-within{
+  background-color: var(--clr-light-cyan);
 }
 
 /* utilities */
@@ -113,4 +120,26 @@ body.menu-open{
 
 :where(.flow > :not(:first-child)) {
   margin-top: var(--flow-spacer, 2.5rem);
+}
+
+.title{
+  font-family: var(--ff-title);
+  font-weight: var(--fw-black);
+}
+
+.fs-primary-title{
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+@media(min-width: 48em){
+  .fs-primary-title{
+    font-size: 3rem;
+  }
+}
+
+@media(min-width: 84em){
+  .fs-primary-title{
+    font-size: 4.5rem;
+  }
 }
