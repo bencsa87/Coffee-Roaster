@@ -11,10 +11,10 @@
 #main-navigation{
   display: none;
   position: absolute;
-  background:linear-gradient(180deg, rgba(254,252,247,1) 0%,  rgba(254,252,247,1) 50%, rgba(254,252,247,.7) 60%, rgba(254,252,247,.7) 100%);
+  background:linear-gradient(180deg, rgba(254,252,247,1) 0%,  rgba(254,252,247,1) 35%, rgba(254,252,247,.7) 60%, rgba(254,252,247,.7) 100%);
   width: 100%;
   inset: 0;
-  margin-top: 6.125rem;
+  margin-top: 5.5rem;
   padding-top: 2rem;
   text-align: center;
   z-index: 1000;

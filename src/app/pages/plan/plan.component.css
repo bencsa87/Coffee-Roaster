@@ -1,0 +1,15 @@
+.section-hero .container{
+  background-image: url(/assets/plan/mobile/image-hero-blackcup.jpg);
+}
+
+@media(min-width: 48em){
+  .section-hero .container{
+    background-image: url(/assets/plan/tablet/image-hero-blackcup.jpg);
+  }
+}
+
+@media(min-width: 84em){
+  .section-hero .container{
+    background-image: url(/assets/plan/desktop/image-hero-blackcup.jpg);
+  }
+}

@@ -1,0 +1,125 @@
+.section-hero .container{
+  background-image: url(/assets/about/mobile/image-hero-whitecup.jpg);
+}
+
+.section-commitment{
+  margin-bottom: calc(7.5rem + 4.875rem);
+}
+
+.section-commitment .container{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.commitment-image{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-quality .container{
+  position: relative;
+  padding-top: 10rem;
+  margin-top: 4.875rem;
+}
+
+.quality-picture{
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.quality-picture img{
+  min-width: 100%;
+  height: 9.75rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media(min-width: 48em){
+  .section-hero .container{
+    background-image: url(/assets/about/tablet/image-hero-whitecup.jpg);
+  }
+
+  .section-commitment{
+    margin-bottom: calc(7.5rem + 10rem);
+  }
+
+  .section-commitment .container{
+    flex-direction: row;
+    gap: 4.6rem;
+    align-items: center;
+  }
+
+  .section-commitment picture {
+    min-width: 17.5rem;
+  }
+
+  .commitment-image{
+    width: 100%;
+    height: auto;
+  }
+
+  .section-quality .container{
+    padding-top: 15rem;
+    text-align: center;
+  }
+
+  .section-quality .container p{
+    margin-inline: auto;
+    max-width: 65ch;
+  }
+
+  .quality-picture img{
+    min-width: 100%;
+    height: 20rem;
+  }
+}
+
+@media(min-width: 84em){
+  .section-hero .container{
+    background-image: url(/assets/about/desktop/image-hero-whitecup.jpg);
+  }
+
+  .section-commitment .container {
+    padding-inline: 5rem;
+    gap: 8rem;
+  }
+
+  .section-commitment picture {
+    min-width: 27.8125rem;
+  }
+
+  .section-commitment p{
+    max-width: 59ch;
+  }
+
+  .quality-picture{
+    position: absolute;
+    top: 0;
+    left: initial;
+    right: 5rem;
+    transform: translateY(-20%);
+  }
+
+  .quality-picture img{
+    min-width: 27.8125rem;
+    height: 29.625rem;
+    border-radius: 10px;
+  }
+
+  .section-quality .container{
+    padding-top: 7rem;
+    text-align: left;
+    display: flex;
+  }
+
+  .section-quality .container p{
+    max-width: 59ch;
+  }
+}
+

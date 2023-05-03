@@ -86,6 +86,52 @@ body.menu-open{
   overflow: hidden;
 }
 
+@media(min-width: 48rem){
+  body.menu-open{
+    overflow: auto;
+  }
+}
+
+@media(min-width: 84rem){
+  body{
+    font-size: 1rem;
+  }
+}
+
+/* section-full */
+.section-full .container{
+  padding: 5.75rem 2rem;
+  margin-bottom: 9.25rem;
+  color: var(--clr-light-cream);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  background-color: var(--clr-footer-bg);
+  border-radius: 10px;
+}
+
+@media(min-width: 48em){
+  .section-full .container{
+    padding: 6rem 3.5rem;
+    background-position: top right;
+    text-align: left;
+  }
+
+  .section-full h1{
+    max-width: 12ch;
+  }
+
+  .section-full p{
+    max-width: 45ch;
+  }
+}
+
+@media(min-width: 84em){
+  .section-full .container{
+    padding: 7rem 5rem;
+  }
+}
+
 /* buttons */
 .button{
   display: inline-flex;
@@ -132,6 +178,11 @@ body.menu-open{
   line-height: 1;
 }
 
+.fs-secondary-title{
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
 @media(min-width: 48em){
   .fs-primary-title{
     font-size: 3rem;
@@ -141,5 +192,10 @@ body.menu-open{
 @media(min-width: 84em){
   .fs-primary-title{
     font-size: 4.5rem;
+  }
+
+  .fs-secondary-title{
+    font-size: 2.5rem;
+    line-height: 1.2;
   }
 }
