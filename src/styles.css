@@ -98,7 +98,11 @@ body.menu-open{
   }
 }
 
-/* section-full */
+/* sections */
+.section{
+  margin-bottom: 9.25rem;
+}
+
 .section-full .container{
   padding: 5.75rem 2rem;
   margin-bottom: 9.25rem;
@@ -147,12 +151,18 @@ body.menu-open{
   color: var(--clr-light-cream);
   background-color: var(--clr-dark-cyan);
   border: none;
+  border-radius: 10px;
   transition: background-color 0.5s ease-in-out;
   outline: none;
 }
 
 .button:hover, .button:focus-within{
   background-color: var(--clr-light-cyan);
+}
+
+/* modal */
+.modal{
+  display: none;
 }
 
 /* utilities */
@@ -168,6 +178,7 @@ body.menu-open{
   margin-top: var(--flow-spacer, 2.5rem);
 }
 
+
 .title{
   font-family: var(--ff-title);
   font-weight: var(--fw-black);
@@ -181,6 +192,10 @@ body.menu-open{
 .fs-secondary-title{
   font-size: 2rem;
   line-height: 1.5;
+}
+
+.green-text{
+  color: var(--clr-dark-cyan);
 }
 
 @media(min-width: 48em){

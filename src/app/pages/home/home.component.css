@@ -2,14 +2,286 @@
   background-image: url(/assets/home/mobile/image-hero-coffeepress.jpg);
 }
 
+.section-collection{
+  text-align: center;
+}
+
+.section-collection h2{
+  font-size: clamp(2rem, 12vw, 8rem);
+  background: linear-gradient(180deg, #979797 0%, rgba(254,252,247,1) 80%);
+  background-clip: text;
+  color: transparent;
+}
+
+.collection-items{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.collection-item img{
+  margin-inline: auto;
+  width: 12.5rem;
+}
+
+.collection-item-name{
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.collection-item p{
+  max-width: 32ch;
+  margin-inline: auto;
+}
+
+.section-benefits{
+  margin-bottom: calc(9.25rem + 38rem);
+  position: relative;
+}
+
+.section-benefits .container{
+  padding-bottom: 38rem;
+  position: relative;
+}
+
+.benefit-items{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: calc(100% - 4rem);
+}
+
+.benefit-item{
+  background-color: var(--clr-dark-cyan);
+  text-align: center;
+  padding: 4rem 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+.benefit-item-name{
+  display: inline-block;
+}
+
+.benefit-item img{
+  margin-inline: auto;
+}
+
+.benefit-item p{
+  max-width: 25ch;
+  margin-inline: auto;
+}
+
+.section-how-it-works{
+  text-align: center;
+}
+
+.section-how-it-works h2{
+  color: var(--clr-grey);
+  margin-bottom: 3.625rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.how-it-works-indicator{
+  display: none;
+}
+
+.how-it-works-items{
+  display: flex;
+  flex-direction: column;
+  gap: 2.875rem;
+}
+
+.how-it-works-item-number{
+  color: var(--clr-pale-orange);
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.how-it-works-item-name{
+  font-size: 1.75rem;
+  line-height: 1.142;
+}
+
+.how-it-works-item p{
+  margin-inline: auto;
+  max-width: 38ch;
+}
+
+
 @media(min-width: 48em){
   .section-hero .container{
     background-image: url(/assets/home/tablet/image-hero-coffeepress.jpg);
+  }
+
+  .section-collection{
+    text-align: left;
+  }
+
+  .section-collection h2{
+    text-align: center;
+  }
+
+  .collection-items{
+    margin-top: clamp(-5rem, -7vw, -4rem);
+    --flow-spacer: 0;
+  }
+
+  .collection-item {
+    display: flex;
+    gap: 2rem;
+    margin-inline: auto;
+  }
+
+  .collection-item > div{
+    padding-top: 1rem;
+  }
+
+  .collection-item img{
+    margin-inline: initial;
+    width: 16rem;
+  }
+
+  .section-benefits .container h2{
+    text-align: center;
+  }
+
+  .section-benefits{
+    margin-bottom: calc(9.25rem + 26rem - 5.75rem);
+    position: relative;
+  }
+
+  .section-benefits .container p{
+    margin-inline: auto;
+    max-width: 58ch;
+  }
+
+  .section-benefits .container{
+    padding-bottom: 26rem;
+  }
+
+  .benefit-items{
+    width: calc(100% - 6.5rem);
+  }
+
+  .benefit-item{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3.5rem;
+    text-align: left;
+  }
+
+  .benefit-item > .flow{
+    margin-top: 0;
+    --flow-spacer: 1rem;
+  }
+
+  .benefit-item img{
+    margin-inline: inherit;
+  }
+
+  .benefit-item p{
+    margin-inline: inherit;
+    max-width: 100%;
+  }
+
+  .section-how-it-works{
+    text-align: left;
+  }
+
+  .how-it-works-item p{
+    margin-inline: inherit;
+    max-width: 25ch;
+  }
+
+  .how-it-works-indicator{
+    display: flex;
+    align-items: center;
+  }
+
+  .how-it-works-indicator .circle{
+    border: 1px solid var(--clr-dark-cyan);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .how-it-works-indicator .line{
+    width: 12.5rem;
+    height: 2px;
+    background-color: var(--clr-pale-orange);
+  }
+
+  .how-it-works-items{
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .how-it-works-item{
+    width: 12.5rem;
   }
 }
 
 @media(min-width: 84em){
   .section-hero .container{
     background-image: url(/assets/home/desktop/image-hero-coffeepress.jpg);
+  }
+
+  .collection-item img{
+    margin-inline: auto;
+  }
+
+  .collection-items{
+    flex-direction: row;
+    margin-inline: auto;
+    gap: 2rem;
+  }
+
+  .collection-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+.section-benefits{
+  margin-bottom: calc(9.25rem + 17.25rem - 5.75rem);
+}
+
+.section-benefits .container{
+  padding-bottom: 17.25rem;
+}
+
+
+  .benefit-items{
+    flex-direction: row;
+    bottom: -12rem;
+  }
+
+  .benefit-item{
+    flex-direction: column;
+    text-align: center;
+    padding-block: 3rem;
+  }
+
+  .how-it-works-indicator .line{
+    width: 21.9rem;
+  }
+
+  .how-it-works-items{
+    gap: 5.9375rem;
+  }
+
+  .how-it-works-item{
+    width: 18rem;
+  }
+
+  .how-it-works-item-name{
+    max-width: 10ch;
+  }
+
+  .how-it-works-item p{
+    max-width: inherit;
   }
 }
